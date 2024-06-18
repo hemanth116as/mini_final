@@ -1,0 +1,92 @@
+.faculty-display-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  color: #333;
+  text-align: center;
+}
+
+.classes-subjects-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.classes-subjects-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.classes-subjects-container li {
+  margin: 10px 0;
+}
+
+.classes-subjects-container strong {
+  color: #28a745; /* Green color for class names */
+}
+
+.table-container {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+.table-container th, .table-container td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.table-container th {
+  background-color:#e0f7fa;
+  color: #00695c;
+  font-weight: bold;
+}
+
+.table-container tr:nth-child(even) {
+  background-color: #dcf1f0;
+}
+
+.table-container tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.table-container th, .table-container td {
+  text-align: center;
+}
+
+.table-container caption {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px;
+  color: #555;
+}
+
+.table-container td:first-child,
+.table-container th:first-child {
+  background-color: #e0f7fa; /* Light blue background for the first column */
+  color: #00695c; /* Dark teal text color for the first column */
+  font-weight: bold; /* Bold text for the first column */
+}
+
+@media screen and (max-width: 600px) {
+  .table-container table {
+    font-size: 16px;
+  }
+
+  .table-container th, .table-container td {
+    padding: 8px;
+  }
+
+  .table-container caption {
+    font-size: 20px;
+  }
+}

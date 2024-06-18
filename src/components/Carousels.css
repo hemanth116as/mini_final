@@ -1,0 +1,16 @@
+.carousel-container {
+  height: 40%; /* Adjust to fit your design */
+}
+
+.carousel-container .slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40%; /* Ensure it fills the container's height */
+}
+
+.carousel-container .slide img {
+  max-width: 40%;
+  max-height: 40%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}

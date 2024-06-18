@@ -1,0 +1,119 @@
+/* Overlay styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  backdrop-filter: blur(5px); /* Blur effect */
+  z-index: 999; /* Ensure it's below the modal */
+  pointer-events: all; /* Enable pointer events on overlay */
+}
+
+/* Styles to make sure the modal is on top and not blurred */
+.faculty-login-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Higher than the overlay */
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fadeIn 0.3s ease forwards; /* Fade-in animation */
+  width: 80%; /* Adjust width as needed */
+  max-width: 400px; /* Maximum width */
+  height: 45%; /* Adjust height as needed */
+  max-height: 90vh; /* Maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  pointer-events: auto; /* Enable pointer events on modal */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* Make sure modal content takes the full height */
+}
+
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.modal-header h2 {
+  margin: 0; /* Remove default margin */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #000; /* Change color to ensure it's visible */
+  font-size: 1.5rem;
+}
+
+.modal-body {
+  flex: 1;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Make sure form-group takes full width */
+}
+
+.form-group label {
+  margin-right: 10px;
+  font-weight: bold;
+  width: 80px; /* Adjust width as needed for label */
+}
+
+.form-group input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.button-group button {
+  margin: 0 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #5588cc;
+  color: #fff;
+}
+
+.button-group button:hover {
+  background-color: #4466aa;
+}

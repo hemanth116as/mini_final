@@ -1,0 +1,18 @@
+.loginButton, .logoutButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .loginButton:hover, .logoutButton:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  

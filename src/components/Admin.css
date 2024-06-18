@@ -1,0 +1,119 @@
+/* Styles for .file-name */
+.file-name {
+  display: inline-block;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.file-name:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.timetable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5eaea;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timetable th, .timetable td {
+  padding: 12px;
+  width: 8%;
+  border-bottom: 1px solid #ddd;
+}
+
+.timetable th {
+  background-color: #cdcce2;
+  color: #333;
+  font-weight: bold;
+}
+
+.timetable td {
+  background-color: #ffffff;
+}
+
+.timetable tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+.timetable tr.highlighted {
+  background-color: #e5e5e5;
+}
+
+.timetable td:not(.empty):hover {
+  background-color: #e5e5e5;
+}
+
+.timetable button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 15%;
+  display: block;
+  margin: 0 auto; /* Centers the button horizontally */
+}
+
+.timetable button:hover {
+  background-color: #45a049;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+.edit-button {
+  font-size: 14px; /* Example size */
+  padding: 8px 16px; /* Example padding */
+  margin: 10px auto; /* Center alignment */
+  display: block; 
+  width: 13%;/* Ensures it's a block element for margin auto */
+}
+.confirm-button {
+  font-size: 14px; /* Example size */
+  padding: 8px 16px; /* Example padding */
+  margin: 10px auto; /* Center alignment */
+  display: block;
+  width: 13%; /* Ensures it's a block element for margin auto */
+}
+.dash-button {
+  font-size: 14px; /* Example size */
+  padding: 8px 16px; /* Example padding */
+  position: absolute;
+  top: 20%; /* Distance from the top */
+  right: 3%; /* Distance from the right */
+  margin: 0; /* Reset margin */
+  display: inline-block;
+  width: 13%; /* Ensure it maintains its size and padding */
+}
+
+
